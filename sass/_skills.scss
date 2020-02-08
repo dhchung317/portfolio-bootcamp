@@ -1,0 +1,21 @@
+.Skills {
+    display:grid;
+    background-color: #444;
+    height:calc(100vh - (2 * 50px));
+    background-image: $gradient3;
+    grid-column: 1/3;
+
+    text-align: center;
+    justify-items: center;
+
+    grid-template-columns: auto repeat(2, minmax(200px, 300px)) auto;
+    grid-template-rows: [project-top] $bar-height [project-start] 1fr [project-mid] 1fr [project-end];
+    grid-gap: 2rem;
+    padding: 0rem;
+
+    .Skills_title {
+        grid-row:project-top;
+        grid-column: 2/4;
+    }
+
+}
