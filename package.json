@@ -4,7 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "live-server --browser=firefox",
     "watch:sass": "node-sass sass/main.scss css/style.css -w",
     "start": "npm-run-all --parallel dev watch:sass",
     "compile:sass": "node-sass sass/main.scss css/style.comp.css",
