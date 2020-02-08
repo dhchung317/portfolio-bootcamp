@@ -1,0 +1,24 @@
+.Pages {
+    display:grid;
+    grid-auto-rows: 100%;
+    grid-auto-flow: row;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+
+section {
+    display:block;
+    height:calc(100vh - (2 * 50px));
+    width:100vw;
+}
+
+// div {
+//     height:100%;
+// }
+
+// .panel {
+//     display: grid;
+//     grid-template-rows: @bar-height auto;
+//     height: calc(~"100vh -" @bar-height);
+// }

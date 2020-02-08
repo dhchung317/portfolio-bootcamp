@@ -1,0 +1,8 @@
+.Footer {
+    background-color: #222;
+
+    display: grid;
+    grid-template-columns: 1fr auto;
+      grid-column-start: 1;
+      grid-column-end:   3;
+}
