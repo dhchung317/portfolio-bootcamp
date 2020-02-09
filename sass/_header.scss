@@ -2,6 +2,8 @@
     display:grid;
     // grid-template-rows:100%;
     height:calc(100vh - (2 * 50px));
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
 
     // grid-template-columns: repeat(2,1fr);
     // grid-auto-rows: 100%;
@@ -19,13 +21,36 @@
     }
 
     &_picture {
+        position: relative;
         float:right;
         align-self: center;
         justify-self: center;
         margin:20px;
+        margin-right: 45px;
+        z-index: 5;
+
+        height:75vh;
+        width:auto;
         // @media only screen and (max-width: $medium) {
         //     grid-column: full-start / full-end;
         //     grid-row: 2 / 3;
         // }
     }
+
+    &_picture_u {
+        position:fixed;
+        right: 0;
+        margin:20px;
+        margin-right: 45px;
+        height:75vh;
+        width: auto;
+        z-index: 0;
+        pointer-events: none;
+        // @media only screen and (max-width: $medium) {
+        //     grid-column: full-start / full-end;
+        //     grid-row: 2 / 3;
+        // }
+    }
+    
+
 }

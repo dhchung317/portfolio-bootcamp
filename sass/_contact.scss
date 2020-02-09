@@ -1,6 +1,6 @@
 .Contact {
-    display:none;
-    background-color: $c-black;
+    visibility: hidden;
+    background-color: #ccc;
     width: 93vw;
     height: 90vh;
     position: absolute;
@@ -10,4 +10,35 @@
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
 
+    -webkit-transition: opacity 1s ease-in;
+    -moz-transition: opacity 1s ease-in;
+    -o-transition: opacity 1s ease-in;
+    -ms-transition: opacity 1s ease-in;
+    transition: opacity 1s ease-in;
+
+    z-index: 10;
+
+    opacity: 0;
 }
+
+.close_contact {
+    margin: 3px;
+    float:right;
+    height:20px;
+    width:20px;
+    font-size:20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.close_contact:after {
+    content: "\00d7";
+}
+
+
+
+.close_contact:hover {
+    background-color: lavender;
+}
+
+

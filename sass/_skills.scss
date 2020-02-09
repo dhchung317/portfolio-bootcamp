@@ -8,14 +8,38 @@
     text-align: center;
     justify-items: center;
 
-    grid-template-columns: auto repeat(2, minmax(200px, 300px)) auto;
-    grid-template-rows: [project-top] $bar-height [project-start] 1fr [project-mid] 1fr [project-end];
     grid-gap: 2rem;
     padding: 0rem;
 
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+
+    grid-template-rows: [project-top] $bar-height [project-start] auto [project-end];
+
     .Skills_title {
         grid-row:project-top;
-        grid-column: 2/4;
+
+        z-index: 1;
     }
 
+    .skills_board {
+        display: grid;
+        // grid-column: col-start / col-end;
+        // grid-row: project-start / project-end;
+        grid-template-columns: [col-start]repeat(4, minmax(100px, 300px))[col-end];
+        grid-template-rows: [project-start] 1fr [project-mid] 1fr [project-end];
+
+        z-index: 1;
+        padding-left:15vw;
+        padding-right:15vw;
+
+        .skill_item {
+            height: 20vh;
+            width:auto;
+        }
+        svg {
+            height: 20vh;
+            width:auto;
+        }
+    }
 }
