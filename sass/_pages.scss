@@ -4,6 +4,9 @@
     grid-auto-flow: row;
     overflow-y: scroll;
     overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-snap-type: mandatory;
+    scroll-snap-type: y mandatory;
 }
 
 
@@ -12,6 +15,9 @@ section {
     height:calc(100vh - (2 * 50px));
     width:100vw;
 }
+
+
+
 
 // div {
 //     height:100%;

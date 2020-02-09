@@ -20,6 +20,7 @@ ul {
 
 li {
     float:left;
+    
 }
 
 li a {
@@ -28,4 +29,22 @@ li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+
+    transition:.5s;
+    
 }
+
+li a:hover {
+    background-color: lavender;
+}
+
+.focus {
+    color:#333;
+    background-color: lavender;
+}
+
