@@ -1,5 +1,7 @@
 .Contact {
+    
     visibility: hidden;
+    opacity: 0;
     background-color: #ccc;
     width: 93vw;
     height: 90vh;
@@ -19,8 +21,6 @@
     transition: 1s;
 
     z-index: 10;
-
-    opacity: 0;
 
     display:inline-grid;
     grid-gap: 2em;
@@ -83,7 +83,5 @@ svg {
 svg:hover {
     transform: scale(1.5);
 }
-
-
 
 }
