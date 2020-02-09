@@ -36,10 +36,23 @@
         .skill_item {
             height: 20vh;
             width:auto;
+            cursor: pointer;
         }
+    
         svg {
+            
             height: 20vh;
             width:auto;
         }
+
+        div{
+            transition: transform .3s;
+        }
+
+        div:hover {
+            transform: scale(1.4);
+        }
+
+        
     }
 }

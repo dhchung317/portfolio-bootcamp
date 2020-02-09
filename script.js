@@ -31,6 +31,7 @@ let contactCloseButton = document.getElementsByClassName("close_contact")[0]
 contactLink.addEventListener("click",toggleContactPage)
 contactCloseButton.addEventListener("click",toggleContactPage)
 
+let links = document.getElementsByClassName("links")[0]
 
 
 function toggleContactPage(){
@@ -43,51 +44,55 @@ function toggleContactPage(){
         contact.style.visibility = "hidden";
     }
 
-    togglePointerEvents()
+    // togglePointerEvents()
 
     contactLink.classList.toggle("focus")
 
 }
 
-function togglePointerEvents(){
-        if(navBar.style.pointerEvents === "none" || navBar.style.pointerEvents === ""){
-            navBar.removeProperty("pointer-events")
-        } else {
-            navBar.style.pointerEvents = "none"
-        }
-}
+// function togglePointerEvents(){
+
+//     linksArray.forEach(link => {
+        
+//         if(link.style.pointerEvents === "none" || link.style.pointerEvents === ""){
+//             link.removeProperty("pointer-events")
+//         } else {
+//             link.style.pointerEvents = "none"
+//         }
+//     });
+// }
 
 
 
-pagesArray.forEach(page => page.addEventListener("wheel",focusLink(page)))
+// pagesArray.forEach(page => page.addEventListener("wheel",focusLink(page)))
 
-function focusLink(page){
+// function focusLink(page){
 
-    if(isInView(page)){
-        if(page.className == "Header"){
-            aboutLink.classList.toggle("focus")
-        }else
-        if(page.className == "Projects"){
-            projectsLink.classList.toggle("focus")
-        }else
-        if(page.className == "Skills"){
-            skillsLink.classList.toggle("focus")
-        }
-    }
-}
+//     if(isInView(page)){
+//         if(page.className == "Header"){
+//             aboutLink.classList.toggle("focus")
+//         }else
+//         if(page.className == "Projects"){
+//             projectsLink.classList.toggle("focus")
+//         }else
+//         if(page.className == "Skills"){
+//             skillsLink.classList.toggle("focus")
+//         }
+//     }
+// }
 
 
 
-function isInView(page){
+// function isInView(page){
 
-    let bottom = window.innerHeight - 50 || document.documentElement.clientHeight - 50
+//     let bottom = window.innerHeight - 50 || document.documentElement.clientHeight - 50
 
-    console.log(page.className + page.getBoundingClientRect().bottom)
-    console.log(bottom)
+//     console.log(page.className + page.getBoundingClientRect().bottom)
+//     console.log(bottom)
 
-    return (bottom % page.getBoundingClientRect().bottom) == 0;
+//     return (bottom % page.getBoundingClientRect().bottom) == 0;
 
-}
+// }
 
 
 

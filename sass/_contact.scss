@@ -6,6 +6,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
+
     -moz-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
@@ -15,13 +16,23 @@
     -o-transition: opacity 1s ease-in;
     -ms-transition: opacity 1s ease-in;
     transition: opacity 1s ease-in;
+    transition: 1s;
 
     z-index: 10;
 
     opacity: 0;
-}
+
+    display:inline-grid;
+    grid-gap: 2em;
+    grid-template-columns: 15vw [col-start] 1fr 1fr [col-end] 15vw;
+    grid-template-rows: [contact-top] 20px [row-start] 1fr 1fr [row-end] 15vh;
+
+
 
 .close_contact {
+    grid-column: 4;
+    justify-self: right;
+    grid-row: contact-top;
     margin: 3px;
     float:right;
     height:20px;
@@ -29,16 +40,50 @@
     font-size:20px;
     text-align: center;
     cursor: pointer;
+    transition: transform .3s;
 }
 
 .close_contact:after {
     content: "\00d7";
 }
 
-
-
 .close_contact:hover {
+    transform: scale(1.25);
     background-color: lavender;
+
+}
+
+.contact_item_container {
+    display: inline-grid;
+
+    grid-column: col-start / col-end;
+    grid-row: contact-top / row-end;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
 }
 
 
+.contact_item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height:40vh;
+
+}
+
+svg {
+    transition: transform .3s;
+    height: 20vh;
+    width:auto;
+}
+
+svg:hover {
+    transform: scale(1.5);
+}
+
+
+
+}
