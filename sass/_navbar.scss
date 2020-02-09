@@ -3,16 +3,20 @@
     grid-column-start: 1;
     grid-column-end:   3;
     height: $bar-height;
-}
 
-.logo{
+    .logo {
     margin-top:3px;
     margin-left:5px;
-}
+    transition: 1s;
+    }
+
+    .logo:hover {
+        transform: scale(1.2);
+    }
 
 ul {
     list-style-type: none;
-    margin: 0;
+    margin: 3px;
     padding: 0;
     overflow: hidden;
     float:right;
@@ -43,6 +47,9 @@ li a {
 li a:hover {
     background-color: lavender;
 }
+
+}
+
 
 .focus {
     color:#333;
