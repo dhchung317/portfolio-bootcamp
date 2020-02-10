@@ -1,63 +1,79 @@
 .Footer {
+    display:grid;
     background-color: #222;
-    height:70px;
-
-    display: grid;
     grid-row:3;
-
-    grid-template-columns: repeat(6, 1fr);
+    height:70px;
+    grid-template-columns: 2vh repeat(6, 1fr) 2vh;
 
 
     .footer_content_container {
-      grid-column: 1 / 7;
-    }
+      // display:grid;
+      // height:100%;
+      grid-column: 2 / 8;
 
-    .footer_content {
-      display:flex;
-      grid-column: 1 / 5;
-      grid-row:auto;
-      align-items: center;
-      justify-content: center;
 
-      p {
-        margin-top: 12px;
-        padding:14px;
-        font-size:.7em;
-        text-align: center;
-        cursor: pointer;
+
+      .footer_content {
+        height:100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+  
+        p {
+          font-size:.7em;
+          text-align: center;
+          cursor: pointer;
+  
+          @media only screen and (max-width:$medium) {
+            font-size: 2vw;
+            // margin-top: 8px;
+            // padding:2px;
+          }
+        }
+      }
+
+      .footer_links {
+        display: flex;
+        float:right;
+        height:100%;
+
+        align-items: center;
+        justify-content: center;
+
+        // grid-column: 5 / 7;
+
+        ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          float: left;;
+  
+          li {
+            float:left;
+          }
+      
+          li a {
+            display: block;
+            font-size: .8em;
+            font-weight: 600;
+            color: white;
+            text-align: center;
+            padding: 14px;
+            text-decoration: none;
+      
+              @media only screen and (max-width:$medium) {
+                // margin-top:12px;
+                padding: 2px;
+                font-size: 2vw;
+              }
+      
+          }
+      
+          li a:hover {
+            background-color: lavender;
+          }
+        }
       }
     }
-
-    .footer_links {
-      grid-column: 5 / 7;
-    }
-
-    ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      float:right;
-    }
-
-    li {
-      float:left;
-    }
-
-    li a {
-      display: block;
-      font-size: .8em;
-      font-weight: 600;
-      color: white;
-      text-align: center;
-      margin-top:12px;
-      padding: 14px;
-      text-decoration: none;
-
-    }
-
-    li a:hover {
-      background-color: lavender;
-  }
-
 }
