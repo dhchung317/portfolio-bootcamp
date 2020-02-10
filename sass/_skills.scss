@@ -42,11 +42,11 @@
         @media only screen and (max-width:$medium) {
         grid-template-columns: repeat(2,1fr);
         grid-template-rows: repeat(4,1fr);
-        padding-left:5vw;
-        padding-right:5vw;
-        grid-gap:4vh;
+        padding-left:1vw;
+        padding-right:1vw;
+        grid-gap:1vh;
         svg {
-            height: 30vh;
+            height: 15vh;
             width:auto;
         }
     }
