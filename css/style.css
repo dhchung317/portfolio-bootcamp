@@ -177,45 +177,62 @@ body {
     background-color: lavender; }
 
 .Header {
+  display: grid;
   background-image: linear-gradient(#111, #222);
   height: calc(100vh - (2 * 60px));
   scroll-snap-align: start;
-  scroll-snap-stop: always; }
-  .Header_info {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    height: 100%; }
-    .Header_info_container {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      grid-column: 1 / 2; }
-      .Header_info_container p {
-        font-size: 2.8em;
-        text-align: center;
-        padding-left: 1.2em;
-        padding-right: .5em;
-        cursor: pointer; }
-  .Header_picture, .Header_picture_u {
-    grid-column: 2 / 3;
-    margin: 20px;
-    margin-right: 45px;
-    height: 75vh;
-    width: auto; }
-  .Header_picture {
-    position: relative;
-    float: right;
-    align-self: center;
-    justify-self: center;
-    z-index: 5;
-    transition: transform .3s; }
-  .Header_picture:hover {
-    transform: scale(1.3); }
-  .Header_picture_u {
-    position: fixed;
-    right: 0;
-    z-index: 0;
-    pointer-events: none; }
+  scroll-snap-stop: always;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr); }
+  .Header_info_container {
+    display: flex;
+    height: 100%;
+    grid-column: 1;
+    grid-row: 1 / 3;
+    align-items: center;
+    justify-content: center; }
+    .Header_info_container p {
+      font-size: 3vw;
+      text-align: center;
+      padding-left: 1.2em;
+      padding-right: .5em;
+      cursor: pointer; }
+    @media only screen and (max-width: 650px) {
+      .Header_info_container {
+        grid-column: 1 / 3;
+        grid-row: 1 / 2; } }
+  .Header_picture_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column: 2;
+    grid-row: 1 / 3; }
+    .Header_picture_container_content, .Header_picture_container_content_u {
+      float: right;
+      height: 40vw;
+      width: auto; }
+    .Header_picture_container_content {
+      position: relative;
+      align-self: center;
+      justify-self: center;
+      z-index: 5;
+      transition: transform .3s; }
+      @media only screen and (max-width: 650px) {
+        .Header_picture_container_content {
+          float: none; } }
+    .Header_picture_container_content:hover {
+      transform: scale(1.3); }
+    .Header_picture_container_content_u {
+      position: fixed;
+      z-index: 0;
+      align-self: center;
+      justify-self: center;
+      pointer-events: none; }
+    @media only screen and (max-width: 650px) {
+      .Header_picture_container {
+        grid-column: 1 / 3;
+        grid-row: 2 / 3;
+        align-items: center; } }
 
 .Projects {
   overflow-y: scroll;
