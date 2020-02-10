@@ -42,9 +42,11 @@
         @media only screen and (max-width:$medium) {
         grid-template-columns: repeat(2,1fr);
         grid-template-rows: repeat(4,1fr);
-        grid-gap:10vh;
+        padding-left:5vw;
+        padding-right:5vw;
+        grid-gap:4vh;
         svg {
-            height: 40vh;
+            height: 30vh;
             width:auto;
         }
     }
@@ -53,6 +55,7 @@
             height: 20vh;
             width:auto;
             cursor: pointer;
+            margin: 20px;
         }
     
         svg {

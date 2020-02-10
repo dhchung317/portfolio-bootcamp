@@ -13,6 +13,7 @@ $bar-height: 50px;
 $gradient1:linear-gradient( #111, #222);
 $gradient2:linear-gradient( #222, #333);
 $gradient3:linear-gradient( #333, #666);
+$gradient4:linear-gradient( #111, #666);
 
 *,
 *::before,
@@ -23,7 +24,8 @@ $gradient3:linear-gradient( #333, #666);
 html {
     box-sizing: border-box;
     scroll-behavior: smooth;
-    
+    // background-image: $gradient4;
+    background-color: #777;
 }
 
 body{
