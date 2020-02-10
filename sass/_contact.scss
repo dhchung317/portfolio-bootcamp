@@ -28,6 +28,9 @@
 
     // grid-gap:2vh;
 
+    @media only screen and (max-width:$medium) {
+        height:80vh;
+    }
     p{
         position: fixed;
         top:-15px;
@@ -48,12 +51,19 @@
     grid-row: contact-top;
     margin: 3px;
     float:right;
-    height:20px;
-    width:20px;
-    font-size:20px;
+    height:30px;
+    width:30px;
+    font-size:30px;
     text-align: center;
     cursor: pointer;
     transition: transform .3s;
+
+    @media only screen and (max-width:$medium) {
+        height:50px;
+        width:50px;
+    }
+
+
 }
 
 .close_contact:after {
@@ -88,13 +98,14 @@
 }
 
 svg {
-    transition: transform .3s;
+    transition: transform .3s, fill .7s ease;
     height: 20vh;
     width:auto;
 }
 
 svg:hover {
     transform: scale(1.5);
+    fill: deeppink;
 }
 
 }
