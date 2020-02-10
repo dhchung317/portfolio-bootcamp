@@ -87,6 +87,8 @@ body {
       transform: scale(1.4); }
 
 .Contact {
+  color: #333;
+  font-weight: 600;
   visibility: hidden;
   opacity: 0;
   background-color: #ccc;
@@ -107,8 +109,9 @@ body {
   z-index: 10;
   display: inline-grid;
   grid-gap: 2em;
-  grid-template-columns: 15vw [col-start] 1fr 1fr [col-end] 15vw;
-  grid-template-rows: [contact-top] 20px [row-start] 1fr 1fr [row-end] 15vh; }
+  grid-template-columns: 7vw [col-start] 1fr 1fr [col-end] 7vw;
+  grid-template-rows: [contact-top] 20px [row-start] 1fr 1fr [row-end] 15vh;
+  grid-gap: 2vh; }
   .Contact .close_contact {
     grid-column: 4;
     justify-self: right;
