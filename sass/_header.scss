@@ -54,9 +54,9 @@
             z-index: 5;
             transition: transform .3s;
 
-            @media only screen and (max-width: $medium) {
-                float: none;
-            }
+            // @media only screen and (max-width: $medium) {
+            //     float: none;
+            // }
         }
     
         &_content:hover {
@@ -66,15 +66,15 @@
         &_content_u {
             position:fixed;
             // right: 0;
-            z-index: 0;
+            z-index: -0;
             align-self: center;
             justify-self: center;
             pointer-events: none;
 
-            @media only screen and (max-width: $medium) {
-                // left:25%;
-                // left:50%;
-            }
+            // @media only screen and (max-width: $medium) {
+            //     // left:25%;
+            //     // left:50%;
+            // }
 
         }
         @media only screen and (max-width: $medium) {

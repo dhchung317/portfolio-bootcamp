@@ -52,7 +52,8 @@
                 transition:.5s;
             
                 @media only screen and (max-width:$medium) {
-                    padding: 2vw 2vw;
+                    padding-left: 3vw;
+                    padding-right: 3vw;
                     font-size:3vw;
                 }
                 

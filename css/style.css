@@ -246,14 +246,11 @@ body {
       justify-self: center;
       z-index: 5;
       transition: transform .3s; }
-      @media only screen and (max-width: 650px) {
-        .Header_picture_container_content {
-          float: none; } }
     .Header_picture_container_content:hover {
       transform: scale(1.3); }
     .Header_picture_container_content_u {
       position: fixed;
-      z-index: 0;
+      z-index: -0;
       align-self: center;
       justify-self: center;
       pointer-events: none; }
@@ -351,8 +348,8 @@ body {
   .Projects a:hover {
     animation: bounce 1.2s; }
   .Projects .Projects_title {
+    position: relative;
     grid-row: project-top;
-    grid-column: col-start / col-end;
     z-index: 1;
     cursor: pointer; }
 
@@ -396,7 +393,8 @@ body {
         transition: .5s; }
         @media only screen and (max-width: 650px) {
           .Navbar .nav_links_container ul li a {
-            padding: 2vw 2vw;
+            padding-left: 3vw;
+            padding-right: 3vw;
             font-size: 3vw; } }
       .Navbar .nav_links_container ul li a:hover {
         background-color: lavender; }
