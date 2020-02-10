@@ -73,10 +73,7 @@ body {
         grid-template-rows: repeat(4, 1fr);
         padding-left: 1vw;
         padding-right: 1vw;
-        grid-gap: 1vh; }
-        .Skills .skills_board svg {
-          height: 15vh;
-          width: auto; } }
+        grid-gap: 1vh; } }
     .Skills .skills_board .skill_item {
       height: 20vh;
       width: auto;
@@ -85,6 +82,9 @@ body {
     .Skills .skills_board svg {
       height: 20vh;
       width: auto; }
+      @media only screen and (max-width: 650px) {
+        .Skills .skills_board svg {
+          height: 15vh; } }
     .Skills .skills_board div {
       transition: transform .3s; }
     .Skills .skills_board div:hover {

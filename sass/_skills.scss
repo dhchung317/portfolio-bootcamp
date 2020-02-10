@@ -45,10 +45,7 @@
         padding-left:1vw;
         padding-right:1vw;
         grid-gap:1vh;
-        svg {
-            height: 15vh;
-            width:auto;
-        }
+        
     }
 
         .skill_item {
@@ -61,6 +58,10 @@
         svg {
             height: 20vh;
             width:auto;
+
+            @media only screen and (max-width:$medium) {
+                height: 15vh;
+            }
         }
 
         div{
