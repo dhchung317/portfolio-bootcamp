@@ -1,6 +1,4 @@
 .Contact {
-    color:#333;
-    font-weight:600;
     visibility: hidden;
     opacity: 0;
     background-color: #ccc;
@@ -24,11 +22,23 @@
     z-index: 10;
 
     display:inline-grid;
-    grid-gap: 2em;
+    // grid-gap: 2em;
     grid-template-columns: 7vw [col-start] 1fr 1fr [col-end] 7vw;
     grid-template-rows: [contact-top] 20px [row-start] 1fr 1fr [row-end] 15vh;
 
-    grid-gap:2vh;
+    // grid-gap:2vh;
+
+    p{
+        position: fixed;
+        top:-15px;
+        left:5px;
+        // height:20px;
+        width:100px;
+        // top:-20%;
+        color:#333;
+        font-weight:600;
+        grid-row:1;
+    }
 
 
 
