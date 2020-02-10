@@ -154,8 +154,9 @@ p {
   }
 
     .Projects_title {
+    position: relative;
     grid-row: project-top;
-    grid-column: col-start / col-end;
+    // grid-column: col-start / col-end;
     z-index: 1;
     cursor: pointer;
     }
