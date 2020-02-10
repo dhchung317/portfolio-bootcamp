@@ -1,8 +1,9 @@
 .Navbar {
+    display: grid;
     background-color: #333;
-    grid-column-start: 1;
-    grid-column-end:   3;
+    grid-row: 1;
     height: $bar-height;
+    grid-template-columns: 50px repeat(3, 1fr);
 
     .logo {
     margin-top:3px;
@@ -14,45 +15,51 @@
         transform: scale(1.2);
     }
 
-ul {
-    list-style-type: none;
-    margin: 3px;
-    padding: 0;
-    overflow: hidden;
-    float:right;
-  }
+    .nav_links_container {
 
-li {
-    float:left;
-    
+        grid-column: 2 / 5;
+
+
+        ul {
+            display: flex;
+            height:100%;
+            align-items: center;
+            justify-content: center;
+            list-style-type: none;
+            margin: 3px;
+            padding: 0;
+            overflow: hidden;
+            float:right;
+
+            li {
+                float:left;
+            }
+            
+            li a {
+                display: block;
+                font-weight: 600;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            
+                -o-transition:.5s;
+                -ms-transition:.5s;
+                -moz-transition:.5s;
+                -webkit-transition:.5s;
+            
+                transition:.5s;
+            
+                @media only screen and (max-width:$medium) {
+                    padding: 2vw 2vw;
+                    font-size:3vw;
+                }
+                
+            }
+            
+            li a:hover {
+                background-color: lavender;
+            }
+        }
+    }
 }
-
-li a {
-    display: block;
-    font-weight: 600;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-
-    transition:.5s;
-    
-}
-
-li a:hover {
-    background-color: lavender;
-}
-
-}
-
-
-.focus {
-    color:#333;
-    background-color: lavender;
-}
-

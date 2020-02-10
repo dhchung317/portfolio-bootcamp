@@ -1,5 +1,6 @@
 .Skills {
     display:grid;
+    overflow-y:scroll;
     background-color: #444;
     height:calc(100vh - (2 * 60px));
     background-image: $gradient3;
@@ -15,6 +16,11 @@
     scroll-snap-stop: always;
 
     grid-template-rows: [project-top] $bar-height [project-start] auto [project-end];
+    grid-auto-flow: row;
+
+
+
+
 
     .Skills_title {
         grid-row:project-top;
@@ -33,6 +39,16 @@
         padding-left:15vw;
         padding-right:15vw;
 
+        @media only screen and (max-width:$medium) {
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(4,1fr);
+        grid-gap:10vh;
+        svg {
+            height: 40vh;
+            width:auto;
+        }
+    }
+
         .skill_item {
             height: 20vh;
             width:auto;
@@ -40,7 +56,6 @@
         }
     
         svg {
-            
             height: 20vh;
             width:auto;
         }
