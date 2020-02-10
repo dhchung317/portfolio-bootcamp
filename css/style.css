@@ -112,6 +112,9 @@ body {
   display: inline-grid;
   grid-template-columns: 7vw [col-start] 1fr 1fr [col-end] 7vw;
   grid-template-rows: [contact-top] 20px [row-start] 1fr 1fr [row-end] 15vh; }
+  @media only screen and (max-width: 650px) {
+    .Contact {
+      height: 80vh; } }
   .Contact p {
     position: fixed;
     top: -15px;
@@ -126,12 +129,16 @@ body {
     grid-row: contact-top;
     margin: 3px;
     float: right;
-    height: 20px;
-    width: 20px;
-    font-size: 20px;
+    height: 30px;
+    width: 30px;
+    font-size: 30px;
     text-align: center;
     cursor: pointer;
     transition: transform .3s; }
+    @media only screen and (max-width: 650px) {
+      .Contact .close_contact {
+        height: 50px;
+        width: 50px; } }
   .Contact .close_contact:after {
     content: "\00d7"; }
   .Contact .close_contact:hover {
@@ -150,11 +157,12 @@ body {
     text-align: center;
     height: 40vh; }
   .Contact svg {
-    transition: transform .3s;
+    transition: transform .3s, fill .7s ease;
     height: 20vh;
     width: auto; }
   .Contact svg:hover {
-    transform: scale(1.5); }
+    transform: scale(1.5);
+    fill: deeppink; }
 
 .Footer {
   display: grid;
