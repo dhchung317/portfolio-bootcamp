@@ -1,6 +1,6 @@
 .Footer {
     display:grid;
-    background-color: #222;
+    background-color: $c-footer;
     grid-row:3;
     height:70px;
     grid-template-columns: 2vh repeat(6, 1fr) 2vh;
@@ -61,6 +61,7 @@
             text-align: center;
             padding: 14px;
             text-decoration: none;
+            transition: .5s;
       
               @media only screen and (max-width:$medium) {
                 // margin-top:12px;
@@ -72,6 +73,8 @@
       
           li a:hover {
             background-color: lavender;
+            color: #66a3ff;
+
           }
         }
       }
