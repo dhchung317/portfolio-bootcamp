@@ -3,6 +3,9 @@ $c-blue: blue;
 $c-pink: pink;
 $c-purple: purple;
 
+$c-navbar:#222;
+$c-footer:#222;
+
 $xlarge: 1200px;
 $large: 900px;
 $medium: 650px;
@@ -10,9 +13,9 @@ $small: 450px;
 
 $bar-height: 50px;
 
-$gradient1:linear-gradient( #111, #222);
-$gradient2:linear-gradient( #222, #333);
-$gradient3:linear-gradient( #333, #666);
+$gradient1:linear-gradient( rgb(255, 173, 230), rgb(255, 104, 104));
+$gradient2:linear-gradient( rgb(255, 104, 104), rgb(68, 65, 255));
+$gradient3:linear-gradient( rgb(68, 65, 255), rgb(194, 74, 74));
 $gradient4:linear-gradient( #111, #666);
 
 *,

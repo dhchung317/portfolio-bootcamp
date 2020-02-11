@@ -1,7 +1,7 @@
 .Navbar {
     display: grid;
     // position: fixed;
-    background-color: #333;
+    background-color: $c-navbar;
     grid-row: 1;
     height: $bar-height;
     grid-template-columns: 50px repeat(3, 1fr);
@@ -61,6 +61,7 @@
             
             li a:hover {
                 background-color: lavender;
+                color: #66a3ff;
             }
         }
     }
