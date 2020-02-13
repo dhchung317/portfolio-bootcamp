@@ -2,8 +2,8 @@
     visibility: hidden;
     opacity: 0;
     background-color: #ccc;
-    width: 93vw;
-    height: 90vh;
+    width: 98vw;
+    height: 95vh;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -29,7 +29,7 @@
     // grid-gap:2vh;
 
     @media only screen and (max-width:$medium) {
-        height:80vh;
+        height:75vh;
     }
     p{
         position: fixed;
