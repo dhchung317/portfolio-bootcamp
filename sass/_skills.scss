@@ -44,9 +44,16 @@
         grid-template-rows: repeat(4,1fr);
         padding-left:1vw;
         padding-right:1vw;
-        grid-gap:1vh;
-        
-    }
+        grid-gap:5vh;
+        }
+
+        @media only screen and (max-width:$small) {
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(4,1fr);
+            padding-left:1vw;
+            padding-right:1vw;
+            grid-gap:1vh;
+            }
 
         .skill_item {
             height: 20vh;
@@ -60,6 +67,9 @@
             width:auto;
 
             @media only screen and (max-width:$medium) {
+                height: 25vh;
+            }
+            @media only screen and (max-width:$small) {
                 height: 15vh;
             }
         }
